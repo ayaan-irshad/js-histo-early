@@ -1,0 +1,60 @@
+
+
+div > div {
+  
+  
+     font-family: Tahoma;
+     text-align: center;
+   }
+   
+   
+   #boot{
+     font-family: Fraunces, serif;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     grid-gap: 2em;
+   }
+   body {
+     background-color: black;
+   
+   }
+   
+
+   
+div > div {
+    position:relative;
+    display:inline-block;
+    width:12.5vw;
+    max-width:200px;
+    height:25vw;
+    margin:5vw 1vw;
+    background:rgba(255,255,255,.1);
+    box-shadow:0 5px 0px rgba(249, 250, 245, 0.5);
+    border-radius:.25vw;    
+    overflow:hidden;
+    backdrop-filter:blur(3px);
+  }
+  div > div:nth-child(2n), div > div:nth-child(4n) {
+    margin:2.5vw 1vw;
+    height:30vw;
+  }
+  
+  div > div{
+    transition: all 1000ms ease-out;
+  }
+  div > div:hover {
+    transition: all 800ms ease-in;
+      transform: scale(1.2)
+  }
+  h1{
+    position: absolute;
+    z-index: 999;
+  }
+
+  img {
+      height: 100%;
+      width: auto;
+
+      left: -91%;
+    position: absolute;
+  }
